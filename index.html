@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HIIT Timer プライバシーポリシー</title>
+    <title>HIIT Timer Privacy Policy</title>
     <style>
+      :root {
+        color-scheme: light;
+      }
+
       body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         line-height: 1.7;
@@ -15,10 +19,10 @@
       }
 
       main {
-        max-width: 760px;
+        max-width: 780px;
         margin: 0 auto;
         background: #ffffff;
-        padding: 32px 24px;
+        padding: 32px 24px 40px;
         box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
         border-radius: 16px;
         margin-top: 40px;
@@ -65,73 +69,258 @@
         font-size: 13px;
         color: #4b5563;
       }
+
+      .language-switch {
+        display: inline-flex;
+        gap: 8px;
+        margin-bottom: 24px;
+        border: 1px solid #d1d5db;
+        border-radius: 999px;
+        padding: 4px;
+        background: #f3f4f6;
+      }
+
+      .language-switch button {
+        appearance: none;
+        border: none;
+        border-radius: 999px;
+        padding: 6px 16px;
+        font-size: 14px;
+        font-weight: 600;
+        background: transparent;
+        color: #1f2937;
+        cursor: pointer;
+      }
+
+      .language-switch button.is-active {
+        background: #2643ff;
+        color: #ffffff;
+        box-shadow: 0 6px 18px rgba(38, 67, 255, 0.25);
+      }
+
+      .language-switch button:focus-visible {
+        outline: 2px solid #6366f1;
+        outline-offset: 2px;
+      }
+
+      .policy {
+        display: none;
+      }
+
+      .policy.is-active {
+        display: block;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      @media (max-width: 640px) {
+        main {
+          padding: 28px 18px 32px;
+          margin-top: 24px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        h2 {
+          font-size: 18px;
+        }
+      }
     </style>
   </head>
   <body>
     <main>
-      <h1>HIIT Timer プライバシーポリシー</h1>
-      <section class="meta">
-        <p>制定日: 2025年1月21日</p>
-        <p>最終更新日: 2025年9月21日</p>
-      </section>
+      <header>
+        <h1>HIIT Timer Privacy Policy</h1>
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-lang-target="ja" class="is-active">日本語</button>
+          <button type="button" data-lang-target="en">English</button>
+        </div>
+        <section class="meta">
+          <p data-lang-text="ja">制定日: 2025年1月21日</p>
+          <p data-lang-text="ja">最終更新日: 2025年9月21日</p>
+          <p data-lang-text="en" hidden>Effective date: January 21, 2025</p>
+          <p data-lang-text="en" hidden>Last updated: September 21, 2025</p>
+        </section>
+      </header>
 
-      <p>
-        本プライバシーポリシーは、HIIT Timer（以下「本アプリ」）が収集する情報、その利用目的、第三者提供の有無、ユーザーの権利について説明するものです。本アプリを利用することで、本ポリシーに同意したものとみなされます。
-      </p>
+      <article class="policy is-active" data-lang="ja">
+        <p>
+          本プライバシーポリシーは、HIIT Timer（以下「本アプリ」）が収集する情報、その利用目的、第三者提供の有無、ユーザーの権利について説明するものです。本アプリを利用することで、本ポリシーに同意したものとみなされます。
+        </p>
 
-      <h2>収集する情報</h2>
-      <ul>
-        <li>
-          広告配信および不正防止のための匿名化されたデバイス識別子
-        </li>
-        <li>
-          アプリの品質向上のための利用統計・クラッシュに関する匿名化情報
-        </li>
-      </ul>
+        <h2>収集する情報</h2>
+        <ul>
+          <li>広告配信および不正防止のための匿名化されたデバイス識別子</li>
+          <li>アプリの品質向上のための利用統計・クラッシュに関する匿名化情報</li>
+        </ul>
 
-      <p>
-        タイマー設定・セッション履歴・アプリ設定などの個人データは、すべてユーザー端末内にのみ保存され、弊社サーバーや第三者へ送信されることはありません。
-      </p>
+        <p>
+          タイマー設定・セッション履歴・アプリ設定などの個人データは、すべてユーザー端末内にのみ保存され、弊社サーバーや第三者へ送信されることはありません。
+        </p>
 
-      <h2>情報の利用目的</h2>
-      <ul>
-        <li>関連性の高い広告の表示と広告配信の最適化</li>
-        <li>アプリの機能改善、品質向上、不具合修正</li>
-      </ul>
+        <h2>情報の利用目的</h2>
+        <ul>
+          <li>関連性の高い広告の表示と広告配信の最適化</li>
+          <li>アプリの機能改善、品質向上、不具合修正</li>
+        </ul>
 
-      <h2>第三者サービスの利用</h2>
-      <p>
-        本アプリは、広告配信のために Google LLC が提供する「Google AdMob」を利用しています。AdMob によるデータ収集および利用方法については、
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google プライバシーポリシー</a>
-        をご参照ください。ユーザーは端末の設定または App Tracking Transparency（ATT）ダイアログから広告トラッキングを制御できます。
-      </p>
+        <h2>第三者サービスの利用</h2>
+        <p>
+          本アプリは、広告配信のために Google LLC が提供する「Google AdMob」を利用しています。AdMob によるデータ収集および利用方法については、
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google プライバシーポリシー</a>
+          をご参照ください。ユーザーは端末の設定または App Tracking Transparency（ATT）ダイアログから広告トラッキングを制御できます。
+        </p>
 
-      <h2>データの保存期間</h2>
-      <p>
-        上記で取得される匿名化情報は、第三者サービスのポリシーに従って保存されます。本アプリが独自にサーバーへ保存するデータはありません。
-      </p>
+        <h2>データの保存期間</h2>
+        <p>
+          上記で取得される匿名化情報は、第三者サービスのポリシーに従って保存されます。本アプリが独自にサーバーへ保存するデータはありません。
+        </p>
 
-      <h2>ユーザーの権利と設定</h2>
-      <ul>
-        <li>iOS: 設定 &gt; プライバシーとセキュリティ &gt; トラッキング から、トラッキング許可のオン/オフを変更できます。</li>
-        <li>Android: Google 広告設定からパーソナライズド広告の配信停止が可能です。</li>
-        <li>本アプリの設定画面から、トラッキング許可の状況を確認し、プライバシーポリシーへアクセスできます。</li>
-      </ul>
+        <h2>ユーザーの権利と設定</h2>
+        <ul>
+          <li>iOS: 設定 &gt; プライバシーとセキュリティ &gt; トラッキング から、トラッキング許可のオン/オフを変更できます。</li>
+          <li>Android: Google 広告設定からパーソナライズド広告の配信停止が可能です。</li>
+          <li>本アプリの設定画面から、トラッキング許可の状況を確認し、プライバシーポリシーへアクセスできます。</li>
+        </ul>
 
-      <h2>プライバシーポリシーの変更</h2>
-      <p>
-        法令の改正やサービス内容の変更などに応じて、本ポリシーを改定する場合があります。重要な変更がある場合は、本アプリ内のお知らせ等で告知します。
-      </p>
+        <h2>プライバシーポリシーの変更</h2>
+        <p>
+          法令の改正やサービス内容の変更などに応じて、本ポリシーを改定する場合があります。重要な変更がある場合は、本アプリ内のお知らせ等で告知します。
+        </p>
 
-      <h2>お問い合わせ</h2>
-      <p>プライバシーに関するお問い合わせは、以下までご連絡ください。</p>
-      <address>
-        メールアドレス: <a href="mailto:capriolabo@gmail.com">capriolabo@gmail.com</a>
-      </address>
+        <h2>お問い合わせ</h2>
+        <p>プライバシーに関するお問い合わせは、以下までご連絡ください。</p>
+        <address>
+          メールアドレス: <a href="mailto:capriolabo@gmail.com">capriolabo@gmail.com</a>
+        </address>
 
-      <p class="note">
-        このプライバシーポリシーに関するお問い合わせの際は、お名前とご質問の内容を具体的に記載いただきますようお願いいたします。
-      </p>
+        <p class="note">
+          このプライバシーポリシーに関するお問い合わせの際は、お名前とご質問の内容を具体的に記載いただきますようお願いいたします。
+        </p>
+      </article>
+
+      <article class="policy" data-lang="en">
+        <p>
+          This privacy policy explains what information HIIT Timer (the "App") collects, how we use it, whether it is shared with third parties, and what rights you have. By using the App, you agree to the practices described here.
+        </p>
+
+        <h2>Information We Collect</h2>
+        <ul>
+          <li>Anonymous device identifiers used for ad delivery and fraud prevention</li>
+          <li>Anonymous usage analytics and crash data for improving app quality</li>
+        </ul>
+
+        <p>
+          Timer configurations, session history, and in-app settings are stored locally on your device only. We do not transmit this personal data to our servers or third parties.
+        </p>
+
+        <h2>How We Use the Information</h2>
+        <ul>
+          <li>To display relevant ads and optimize ad delivery</li>
+          <li>To enhance app functionality, improve quality, and fix issues</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        <p>
+          The App uses Google AdMob, provided by Google LLC, to deliver advertisements. Please review the
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+          for details on how Google collects and uses data. You can manage ad tracking permissions in your device settings or through the App Tracking Transparency (ATT) dialog.
+        </p>
+
+        <h2>Data Retention</h2>
+        <p>
+          Anonymous data described above is retained according to the policies of the third-party services we use. The App does not maintain its own external servers for storing your data.
+        </p>
+
+        <h2>Your Rights and Controls</h2>
+        <ul>
+          <li>iOS: Go to Settings &gt; Privacy &amp; Security &gt; Tracking to change ad tracking permissions.</li>
+          <li>Android: Visit Google Ad Settings to opt out of personalized ads.</li>
+          <li>You can review tracking permission status and access this policy from within the App settings.</li>
+        </ul>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+          We may update this policy as laws, regulations, or our services evolve. When significant changes occur, we will provide notice within the App or through other appropriate channels.
+        </p>
+
+        <h2>Contact</h2>
+        <p>If you have any privacy-related questions, please contact us at:</p>
+        <address>
+          Email: <a href="mailto:capriolabo@gmail.com">capriolabo@gmail.com</a>
+        </address>
+
+        <p class="note">
+          When you contact us, please include your name and a detailed description of your inquiry so we can respond promptly.
+        </p>
+      </article>
     </main>
+
+    <script>
+      (function () {
+        const STORAGE_KEY = 'hiit-timer-privacy-lang';
+        const toggles = document.querySelectorAll('[data-lang-target]');
+        const policies = document.querySelectorAll('.policy');
+        const metaTexts = document.querySelectorAll('[data-lang-text]');
+
+        const setLanguage = (lang) => {
+          policies.forEach((policy) => {
+            policy.classList.toggle('is-active', policy.dataset.lang === lang);
+          });
+
+          toggles.forEach((button) => {
+            button.classList.toggle('is-active', button.dataset.langTarget === lang);
+            button.setAttribute('aria-pressed', button.dataset.langTarget === lang ? 'true' : 'false');
+          });
+
+          metaTexts.forEach((node) => {
+            const shouldShow = node.dataset.langText === lang;
+            node.hidden = !shouldShow;
+          });
+
+          document.documentElement.lang = lang;
+          try {
+            localStorage.setItem(STORAGE_KEY, lang);
+          } catch (error) {
+            // noop if storage is unavailable
+          }
+        };
+
+        toggles.forEach((button) => {
+          button.addEventListener('click', () => {
+            setLanguage(button.dataset.langTarget);
+          });
+        });
+
+        let preferred = 'ja';
+        try {
+          const stored = localStorage.getItem(STORAGE_KEY);
+          if (stored === 'ja' || stored === 'en') {
+            preferred = stored;
+          } else {
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (typeof browserLang === 'string' && browserLang.toLowerCase().startsWith('en')) {
+              preferred = 'en';
+            }
+          }
+        } catch (error) {
+          // ignore storage errors and use default
+        }
+
+        setLanguage(preferred);
+      })();
+    </script>
   </body>
 </html>
